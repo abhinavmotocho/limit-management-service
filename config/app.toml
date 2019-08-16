@@ -1,0 +1,17 @@
+# Order execution service config file
+[development]
+    [development.kafka]
+    SRS_ORDERS_LMS = "queuing-trading-placeorder-lms"
+    LMS_CONSUMER_GRP = "lms.orders.grp"
+    LMS_ORDERS_SRS = "queuing-trading-placeorder-srs"
+    TRADE_BIDASK_TOPIC = ""
+    [development.log]
+    name = "limit-management-service.log"
+
+[production]
+    [production.kafka]
+    SRS_ORDERS_OSS = "oes.orders"
+    OSS_CONSUMER_GRP = "oss.orders.grp"
+    OSS_ORDERS_OES = "oss.orders"
+    [production.log]
+    name = "limit-management-service.log"
